@@ -1,0 +1,30 @@
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.78px;
+}
+
+.logo--padding {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding: 26px 0 26px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0 25px 0;
+  }
+}
+
+.logo--whiteColor {
+  @extend .logo;
+  color: getColor("white-color");
+}
+
+.logo--blueColor {
+  @extend .logo;
+  color: getColor("accent-color");
+}
+
+.logo--darkColor {
+  @extend .logo;
+  color: getColor("total-black-color");
+}

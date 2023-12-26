@@ -1,0 +1,45 @@
+@import "../../utils/colors";
+
+.affair {
+  padding-bottom: 94px;
+}
+
+.affair-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+
+  color: getColor("black-color");
+}
+
+.affair-list {
+  display: flex;
+  gap: 30px;
+}
+
+.affair-item {
+  position: relative;
+}
+
+.affair-img {
+  width: 370px;
+}
+
+.affair-text {
+  position: absolute;
+  bottom: 0;
+
+  @extend %flexCenter;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  color: getColor("white-color");
+  background-color: getColor("opasity-black");
+}

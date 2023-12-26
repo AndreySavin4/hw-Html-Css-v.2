@@ -1,0 +1,97 @@
+@import "../../utils/colors";
+
+.team {
+  padding: 94px 0;
+  background: getColor("perl-color");
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+
+  color: getColor("black-color");
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-item {
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: getColor("white-color");
+}
+
+.team-img {
+}
+
+.team-container {
+  padding: 30px 0;
+}
+
+.team-name {
+  text-align: center;
+
+  font-size: 16px;
+  letter-spacing: 0.48px;
+
+  color: getColor("black-color");
+}
+
+.team-text {
+  text-align: center;
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.team-links {
+  @extend %flexCenter;
+  //   display: flex;
+  //   justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-links-item {
+}
+
+.team-links-link {
+  @extend %flexCenter;
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: getColor("main-color");
+
+  transition: background-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("accent-color");
+  }
+}
+
+.team-links-icon {
+  fill: getColor("icon-color");
+
+  transition: fill 250ms $timingFunction;
+
+  .team-links-link:hover &,
+  .team-links-link:focus & {
+    fill: getColor("white-color");
+  }
+}

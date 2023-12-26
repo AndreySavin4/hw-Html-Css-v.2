@@ -1,0 +1,37 @@
+// .contacts {
+//   margin-left: auto;
+// }
+
+// .contacts-list {
+//   display: flex;
+//   gap: 50px;
+// }
+
+// .contacts-item {
+// }
+
+// .contacts-connection {
+//   display: flex;
+//   gap: 10px;
+//   padding: 32px 0;
+
+//   color: getColor("main-color");
+
+//   transition: color 250ms $timingFunction;
+
+//   &:hover,
+//   &:focus {
+//     color: getColor("accent-color");
+//   }
+// }
+
+// .contacts-icon {
+//   fill: currentColor;
+
+//   transition: fill 250ms $timingFunction;
+
+//   .contacts-item:hover &,
+//   .contacts-item:focus & {
+//     fill: getColor("accent-color");
+//   }
+// }

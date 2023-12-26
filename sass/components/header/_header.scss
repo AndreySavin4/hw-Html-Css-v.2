@@ -1,0 +1,52 @@
+@import "../../utils/colors";
+
+.header {
+  @media screen and (min-width: 768) {
+    border-bottom: 1px solid getColor("header-bottom-color");
+  }
+}
+
+.header-container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}
+
+/* Mobile Button Open */
+.mobile-btn-open {
+  @extend %flexCenter;
+
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-icon__open {
+  fill: getColor(black-color);
+
+  transition: fill 250ms $timingFunction;
+
+  .mobile-btn-open:hover &,
+  .mobile-btn-open:focus & {
+    fill: getColor(accent-color);
+  }
+}
+
+.info {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+/* Navigation */
+@import "./navigation";
+
+/* Contacts */
+@import "./contacts";

@@ -1,0 +1,24 @@
+@import "../../utils/colors";
+
+.footer {
+  padding: 60px 0;
+
+  background: getColor("background-color");
+}
+
+.footer-container {
+  display: flex;
+  //   align-items: baseline;
+}
+
+/* Contact-container */
+
+@import "./contact";
+
+/* Footer-social-container */
+
+@import "./social";
+
+/* Footer-newsletter */
+
+@import "./newsLetter";

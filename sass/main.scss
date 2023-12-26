@@ -1,0 +1,26 @@
+// Utils
+@import "./utils/colors";
+@import "./utils/modern-normalize";
+@import "./utils/placeholders";
+@import "./utils/logo";
+@import "./utils/mobile-icon";
+
+//  Components
+
+@import "./components/header/header";
+@import "./components/main/sulution";
+@import "./components/main/peculiarities";
+@import "./components/main/affair";
+@import "./components/main/team";
+@import "./components/main/clients";
+@import "./components/footer/footer";
+
+// Portfolio page
+
+@import "./components/portfolio/index";
+
+// Form
+
+@import "./components/modal/index";
+
+@import "./components/mobile_modal/mobile-modal";

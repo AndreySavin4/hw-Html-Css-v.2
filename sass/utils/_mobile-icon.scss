@@ -1,0 +1,14 @@
+.mobile-icon {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    border: 0;
+    padding: 0;
+
+    background-color: inherit;
+  }
+}

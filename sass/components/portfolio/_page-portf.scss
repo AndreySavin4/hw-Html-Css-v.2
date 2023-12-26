@@ -1,0 +1,41 @@
+@import "../../utils/colors";
+
+.project {
+  padding: 94px 0;
+}
+
+/* btn */
+.project-btn-list {
+  @extend %flexCenter;
+  //   display: flex;
+  //   justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.project-btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: inherit;
+
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.48px;
+
+  color: getColor(black-color);
+  background: getColor(perl-color);
+  cursor: pointer;
+
+  transition: background-color 250ms $timingFunction,
+    color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: getColor(white-color);
+    background-color: getColor(accent-color);
+  }
+}
+
+.project-btn.padding-btn {
+  padding: 6px 25px;
+}

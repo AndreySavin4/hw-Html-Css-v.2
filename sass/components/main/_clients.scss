@@ -1,0 +1,60 @@
+@import "../../utils/colors";
+
+.clients {
+  padding: 94px 0;
+
+  background-color: getColor("white-color");
+}
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+
+  color: getColor("black-color");
+}
+
+.clients-list {
+  @extend %flexCenter;
+  //   display: flex;
+  //   justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+}
+
+.clients-link {
+  @extend %flexCenter;
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+
+  border: 1px solid getColor("icon-color");
+  color: getColor("icon-color");
+
+  transition: border-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    border-color: getColor("accent-color");
+  }
+}
+
+.clients-icon {
+  fill: getColor("icon-color");
+
+  transition: fill 250ms $timingFunction;
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: getColor("accent-color");
+  }
+}
