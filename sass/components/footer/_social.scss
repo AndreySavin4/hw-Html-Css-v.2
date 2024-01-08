@@ -1,7 +1,15 @@
 @import "../../utils/colors";
 
 .footer-social-container {
-  margin-right: 93px;
+  @media screen and (max-width:767px) {
+    margin-bottom: 60px;
+    
+       text-align: center;
+      }
+
+  @media screen and (min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer-social-title {
@@ -17,6 +25,10 @@
 .footer-links {
   display: flex;
   gap: 10px;
+
+  @media screen and (max-width:767px) {
+    justify-content: center;
+  }
 }
 
 .footer-link-item {

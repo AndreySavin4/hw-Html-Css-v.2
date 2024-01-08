@@ -1,40 +1,45 @@
 @import "../../utils/colors";
 
 .clients {
-  padding: 94px 0;
+@extend %section;
 
   background-color: getColor("white-color");
 }
 
 .clients-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.84px;
 
   color: getColor("black-color");
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    letter-spacing: 1.08px;
+  }
 }
 
 .clients-list {
-  @extend %flexCenter;
-  //   display: flex;
-  //   justify-content: center;
-  gap: 30px;
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
 }
 
-.clients-item {
-}
 
 .clients-link {
-  @extend %flexCenter;
-  //   display: inline-flex;
-  //   justify-content: center;
-  //   align-items: center;
-  width: 170px;
-  height: 92px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 210px;
+    height: 92px;
+
   border-radius: 4px;
 
   border: 1px solid getColor("icon-color");
@@ -45,6 +50,11 @@
   &:hover,
   &:focus {
     border-color: getColor("accent-color");
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 170px;
+    height: 92px;
   }
 }
 

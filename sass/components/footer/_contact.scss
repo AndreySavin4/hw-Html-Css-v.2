@@ -1,8 +1,17 @@
 @import "../../utils/colors";
 
 .footer-contact-container {
-  width: 231px;
-  margin-right: 70px;
+  @media screen and (max-width:767px) {
+margin-bottom: 60px;
+
+   text-align: center;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 231px;
+    margin-right: 70px;
+  }
+
 }
 
 .footer-logo {
@@ -17,11 +26,14 @@
 .footer-address-list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 8px;
+
+  @media screen and (min-width:1200px) {
+    gap: 9px;
+  }
 }
 
 .footer-link {
-  font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.42px;
 
@@ -29,7 +41,6 @@
 }
 
 .footer-address-contact {
-  font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.42px;
 

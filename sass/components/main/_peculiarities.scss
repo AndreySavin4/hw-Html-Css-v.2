@@ -1,16 +1,24 @@
 @import "../../utils/colors";
 
 .peculiarities {
-  padding: 94px 0;
+  @extend %section;
 }
 
 .peculiarities-list {
-  display: flex;
-  gap: 30px;
+    @media screen and (min-width:1200px) {
+        display: flex;
+        gap: 30px;   
+    }
+
 }
 
-.peculiarities-item {
-  width: 270px;
+.peculiarities-item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    }
+
 }
 
 .peculiarities-block {
@@ -24,8 +32,9 @@
 
 .peculiarities-title {
   margin-bottom: 10px;
-  text-transform: uppercase;
 
+  text-align: center;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -34,6 +43,7 @@
 }
 
 .peculiarities-text {
+    
   font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.42px;

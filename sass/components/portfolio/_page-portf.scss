@@ -1,16 +1,31 @@
 @import "../../utils/colors";
 
 .project {
-  padding: 94px 0;
+  @extend %section;
 }
 
 /* btn */
 .project-btn-list {
-  @extend %flexCenter;
-  //   display: flex;
-  //   justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  @media screen and (min-width:1200px) {
+    // @extend %flexCenter;
+      display: flex;
+      justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+
+}
+
+.project-btn-item {
+@media screen and (max-width:767px) {
+  display: inline-flex;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+}
+
+.project-btn-item:last-child{
+  margin-bottom: 0;
 }
 
 .project-btn {

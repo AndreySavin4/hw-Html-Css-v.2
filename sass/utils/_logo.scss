@@ -1,8 +1,13 @@
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.78px;
+  font-size: 24px;
+  letter-spacing: 0.72px;
+
+  @media  screen and (min-width:1200px) {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 
 .logo--padding {

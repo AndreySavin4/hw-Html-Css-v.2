@@ -1,7 +1,11 @@
 @import "../../utils/colors";
 
 .affair {
-  padding-bottom: 94px;
+  display: none;
+  @extend %section;
+  @media  screen and (min-width:1200px) {
+    display: block;
+  }
 }
 
 .affair-title {
