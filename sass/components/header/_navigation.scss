@@ -1,38 +1,42 @@
-// @import "../../utils/colors";
-// .nav {
-//   margin-left: 93px;
-// }
+@import "../../utils/colors";
 
-// .nav-list {
-//   display: flex;
-//   gap: 50px;
-// }
+.nav {
+  @extend %notForMobile;
+}
 
-// .nav-item {
-//   position: relative;
-// }
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
 
-// .nav-link {
-//   padding: 32px 0;
+.nav-item {
+  position: relative;
+}
 
-//   color: getColor("black-color");
+.nav-link {
+  padding: 32px 0;
 
-//   transition: color 250ms $timingFunction;
+  font-weight: 500;
+  letter-spacing: 0.28px;
 
-//   &:hover,
-//   &:focus {
-//     color: getColor("accent-color");
-//   }
-// }
+  color: getColor("black-color");
 
-// .nav-link.main-page::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: -33px;
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 2px;
+  transition: color 250ms $timingFunction;
 
-//   background-color: getColor("accent-color");
-// }
+  &:hover,
+  &:focus {
+    color: getColor("accent-color");
+  }
+}
+
+.nav-link.main-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: getColor("accent-color");
+}

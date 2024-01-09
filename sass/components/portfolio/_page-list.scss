@@ -1,10 +1,14 @@
 @import "../../utils/colors";
 
+.project-theme {
+  margin-top: 40px;
+}
+
 .project-theme-list {
-  @media screen and (min-width:768px) {
-      display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -16,6 +20,10 @@
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
+}
+
+.project-theme-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .project-overflow {
@@ -32,7 +40,6 @@
   padding: 63px 24px;
 
   font-size: 18px;
-  font-weight: 400;
   line-height: calc(28 / 18);
   letter-spacing: 0.54px;
 
@@ -53,7 +60,7 @@
   padding: 20px 24px;
   border: 1px solid getColor(border-color);
   border-top: none;
-  background: getColor(white-color);
+  background-color: getColor(white-color);
 }
 
 .project-theme-site {
@@ -66,7 +73,6 @@
 
 .project-theme-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: calc(30 / 16);
   letter-spacing: 0.48px;
 }

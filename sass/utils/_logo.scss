@@ -1,21 +1,24 @@
+@import "./colors";
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.72px;
 
-  @media  screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     letter-spacing: 0.78px;
   }
 }
 
 .logo--padding {
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  padding: 16px 0;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 26px 0 26px 0;
   }
   @media screen and (min-width: 1200px) {
-    padding: 24px 0 25px 0;
+    padding: 24px 0 24px 0;
   }
 }
 

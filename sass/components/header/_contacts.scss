@@ -1,37 +1,50 @@
-// .contacts {
-//   margin-left: auto;
-// }
+@import "../../utils/colors";
 
-// .contacts-list {
-//   display: flex;
-//   gap: 50px;
-// }
+.contacts {
+  @extend %notForMobile;
+}
 
-// .contacts-item {
-// }
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
 
-// .contacts-connection {
-//   display: flex;
-//   gap: 10px;
-//   padding: 32px 0;
+.contacts-connection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
-//   color: getColor("main-color");
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
 
-//   transition: color 250ms $timingFunction;
+  color: getColor("main-color");
 
-//   &:hover,
-//   &:focus {
-//     color: getColor("accent-color");
-//   }
-// }
+  transition: color 250ms $timingFunction;
 
-// .contacts-icon {
-//   fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+    padding: 32px 0;
+  }
 
-//   transition: fill 250ms $timingFunction;
+  &:hover,
+  &:focus {
+    color: getColor("accent-color");
+  }
+}
 
-//   .contacts-item:hover &,
-//   .contacts-item:focus & {
-//     fill: getColor("accent-color");
-//   }
-// }
+.contacts-icon {
+  fill: currentColor;
+
+  transition: fill 250ms $timingFunction;
+
+  .contacts-item:hover &,
+  .contacts-item:focus & {
+    fill: getColor("accent-color");
+  }
+}
