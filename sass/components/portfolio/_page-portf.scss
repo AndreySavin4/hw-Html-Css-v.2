@@ -6,8 +6,7 @@
 
 /* btn */
 .project-btn-list {
-  @media screen and (min-width:1200px) {
-    // @extend %flexCenter;
+  @media screen and (min-width:768px) {
       display: flex;
       justify-content: center;
     gap: 8px;
@@ -22,10 +21,10 @@
   margin-right: 8px;
   margin-bottom: 15px;
 }
-}
 
-.project-btn-item:last-child{
+&:last-child{
   margin-bottom: 0;
+}
 }
 
 .project-btn {
@@ -33,6 +32,7 @@
   border-radius: 4px;
   border: inherit;
 
+  font-size: 16px;
   font-weight: 500;
   line-height: calc(26 / 16);
   letter-spacing: 0.48px;
