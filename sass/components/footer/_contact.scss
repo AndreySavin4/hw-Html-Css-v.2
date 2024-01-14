@@ -9,15 +9,17 @@
 
   @media screen and (min-width:1200px) {
     width: 231px;
-    margin-right: 70px;
-  }
+    }
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-
   text-align: center;
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 
 .footer-address {
@@ -31,6 +33,7 @@
   gap: 8px;
 
   @media screen and (min-width:1200px) {
+    align-items: flex-start;
     gap: 9px;
   }
 }

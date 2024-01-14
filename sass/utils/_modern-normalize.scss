@@ -120,11 +120,6 @@ body {
 
   color: getColor("main-color");
   background-color: getColor("white-color");
-
-  @media screen and (min-width: 1200px) {
-    font-weight: 500;
-    letter-spacing: 0.28px;
-  }
 }
 
 h1,

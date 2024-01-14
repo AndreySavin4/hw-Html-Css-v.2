@@ -12,11 +12,11 @@
 
 .peculiarities-item {
     @media screen and (min-width:768px) {
-      width: 354px;
+      width:calc((100% - 30px) / 2);
   }
 
     @media screen and (min-width:1200px) {
-        width: 270px;
+      width:calc((100% - 90px) / 4);
     }
 
 }
@@ -40,7 +40,7 @@
 
   color: getColor("black-color");
 
-  @media screen and (min-width:768px) and (max-width:1199px) {
+  @media screen and (min-width:768px) {
     text-align: left;
   }
 }

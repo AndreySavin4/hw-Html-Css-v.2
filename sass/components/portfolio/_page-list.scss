@@ -15,8 +15,6 @@
 }
 
 .project-theme-item {
-width: 540px;
-
 @media screen and (min-width:768px) and (max-width:1199px) {
   width:calc((100% - 30px) / 2)
 }
@@ -44,7 +42,7 @@ width: 540px;
 
 .project-overflow-text {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   text-align: left;
   height: 100%;
@@ -71,6 +69,12 @@ width: 540px;
   border: 1px solid getColor('border-color');
   border-top: none;
   padding: 20px 24px;
+}
+
+.project-theme-description.align-paddng{
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    padding: 20px 24px 54px 24px;
+  }
 }
 
 .project-theme-site {

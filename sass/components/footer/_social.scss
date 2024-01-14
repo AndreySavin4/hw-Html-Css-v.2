@@ -6,10 +6,6 @@
     
        text-align: center;
       }
-
-  @media screen and (min-width:1200px) {
-    margin-right: 93px;
-  }
 }
 
 .footer-social-title {
@@ -17,10 +13,13 @@
 
   font-weight: 700;
   letter-spacing: 0.42px;
-  text-align: center;
   text-transform: uppercase;
 
   color: getColor("white-color");
+
+  @media screen and (min-width:480px) and (max-width:1199px) {
+    text-align: center;
+  }
 }
 
 .footer-links {
@@ -30,9 +29,6 @@
   @media screen and (max-width:767px) {
     justify-content: center;
   }
-}
-
-.footer-link-item {
 }
 
 .footer-link-link {

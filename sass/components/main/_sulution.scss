@@ -50,6 +50,7 @@
   }
 
   @media screen and (min-width: 769px) {
+    padding: 200px 0;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -68,10 +69,6 @@
         ),
         url("../../../images/background/bg-1200@2x.jpg");
     }
-  }
-
-  @media screen and (min-width: 769px) {
-    padding: 200px 0;
   }
 }
 
@@ -94,8 +91,8 @@
     margin-bottom: 30px;
 
     font-size: 44px;
-    letter-spacing: 2.64px;
     line-height: calc(60 / 44);
+    letter-spacing: 2.64px;
   }
 }
 

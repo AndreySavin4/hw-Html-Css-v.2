@@ -1,10 +1,13 @@
 @import "../../utils/colors";
 
 .footer-newsletter{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  @media screen and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
 }
 
 .footer-newsletter-text {
@@ -15,8 +18,8 @@
 
   color: getColor("white-color");
 
-  @media screen and (max-width:767px) {
-    text-align: center;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -38,14 +41,16 @@
     margin-right: 8px;
     margin-bottom: 0;
   }
+
+  &::placeholder {
+    line-height: calc(20 / 16);
+    letter-spacing: 0.48px;
+  
+    color: getColor("placeholder-color");
+  }
 }
 
-.footer-newsletter-input::placeholder {
-  line-height: calc(20 / 16);
-  letter-spacing: 0.48px;
 
-  color: getColor("placeholder-color");
-}
 
 .footer-newsletter-button {
   display: inline-flex;
