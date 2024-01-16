@@ -28,7 +28,7 @@
 
   .mobile-btn-open:hover &,
   .mobile-btn-open:focus & {
-    fill: getColor(accent-color);
+    fill: getColor("accent-color");
   }
 }
 
